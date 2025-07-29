@@ -29,9 +29,8 @@ public class SafeInput {
                 System.out.println("Not a valid integer. Try again.");
                 pipe.next(); // throw away invalid input
             }
-            pipe.nextLine(); // clear leftover newline
+            pipe.nextLine();
         }
-
         return value;
     }
 
@@ -94,7 +93,7 @@ public class SafeInput {
                 System.out.println("Bad input. Please enter a number.");
                 pipe.next();
             }
-            pipe.nextLine(); // flush newline
+            pipe.nextLine();
         }
 
         return val;
