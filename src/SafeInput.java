@@ -27,11 +27,10 @@ public class SafeInput {
                 valid = true;
             } else {
                 System.out.println("Not a valid integer. Try again.");
-                pipe.next(); // throw away invalid input
+                pipe.next();
             }
-            pipe.nextLine(); // clear leftover newline
+            pipe.nextLine();
         }
-
         return value;
     }
 
@@ -46,9 +45,9 @@ public class SafeInput {
                 isGood = true;
             } else {
                 System.out.println("That’s not a double! Try again.");
-                pipe.next(); // clear bad input
+                pipe.next();
             }
-            pipe.nextLine(); // always clear the newline
+            pipe.nextLine();
         }
 
         return number;
@@ -69,9 +68,9 @@ public class SafeInput {
                 }
             } else {
                 System.out.println("That’s not an int!");
-                pipe.next(); // get rid of bad stuff
+                pipe.next();
             }
-            pipe.nextLine(); // clear newline
+            pipe.nextLine();
         }
 
         return input;
@@ -94,7 +93,7 @@ public class SafeInput {
                 System.out.println("Bad input. Please enter a number.");
                 pipe.next();
             }
-            pipe.nextLine(); // flush newline
+            pipe.nextLine();
         }
 
         return val;
